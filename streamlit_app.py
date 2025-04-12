@@ -19,6 +19,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('Fruit
 st.dataframe(data=my_dataframe, use_container_width=True)
 st.stop()
 
+
+
 ingredients_list = st.multiselect(
     "Choose up to 5 ingredients:",
     my_dataframe, 
